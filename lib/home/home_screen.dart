@@ -20,10 +20,8 @@ class HomeScreen extends StatelessWidget {
           body: Row(
             children: [
               if (constraints.maxWidth > 800) const SideBar(),
-              Flexible(
-                child: Container(
-                  color: Colors.red,
-                ),
+              const Flexible(
+                child: AutoRouter(),
               )
             ],
           ),

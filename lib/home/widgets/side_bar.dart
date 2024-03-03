@@ -1,5 +1,6 @@
-
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:workload_tester/app/navigation/workloadtester_navigation.dart';
 
 import 'side_bar_button.dart';
 
@@ -16,7 +17,9 @@ class SideBar extends StatelessWidget {
           SliverToBoxAdapter(
             child: SideBarButton(
               title: 'New Project',
-              onPressed: () {},
+              onPressed: () {
+                AutoRouter.of(context).push(const NewProjectRoute());
+              },
             ),
           ),
           SliverList.builder(
