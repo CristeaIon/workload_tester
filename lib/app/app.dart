@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:workload_tester/app/l10n/generated/l10n.dart';
 import 'package:workload_tester/app/navigation/workloadtester_navigation.dart';
+import 'package:workload_tester/app/theme/theme.dart';
 
 class WorkloadTesterApp extends StatelessWidget {
   const WorkloadTesterApp({super.key});
@@ -10,6 +11,7 @@ class WorkloadTesterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: "Workload Tester",
       routerConfig: WorkloadTesterNavigator().config(),
       supportedLocales: L.delegate.supportedLocales,
@@ -19,10 +21,7 @@ class WorkloadTesterApp extends StatelessWidget {
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      theme: WorkloadTesterTheme.light(),
     );
   }
 }
