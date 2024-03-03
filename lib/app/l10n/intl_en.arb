@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "@@author": "icristea",
+    "@@last_modified": "03.03.2024",
+
+    "appName": "Workload Tester",
+    "@appName": {
+        "description": "This represent current app name"
+    }
+    
+}
