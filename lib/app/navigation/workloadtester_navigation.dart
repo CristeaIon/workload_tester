@@ -14,7 +14,7 @@ class WorkloadTesterNavigator extends _$WorkloadTesterNavigator {
           page: HomeRoute.page,
           children: [
             AutoRoute(
-              page: NewProjectRoute.page,
+              page: ProjectRoute.page,
             )
           ],
         ),

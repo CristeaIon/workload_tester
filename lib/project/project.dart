@@ -1,1 +1,1 @@
-export 'new_project_screen.dart';
+export 'project_screen.dart';

@@ -18,7 +18,7 @@ class SideBar extends StatelessWidget {
             child: SideBarButton(
               title: 'New Project',
               onPressed: () {
-                AutoRouter.of(context).push(const NewProjectRoute());
+                AutoRouter.of(context).push(const ProjectRoute());
               },
             ),
           ),
